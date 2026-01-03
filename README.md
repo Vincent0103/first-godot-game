@@ -1,6 +1,5 @@
 # Knight's Pause
-
-<img width="1155" height="648" alt="image" src="https://github.com/user-attachments/assets/7dd88429-23d7-4c64-a2c5-7816577a6eac" />
+<img width="708" height="400" alt="Capture d&#39;écran 2026-01-03 191945" src="https://github.com/user-attachments/assets/0e1493e0-d67e-47b8-abd5-28d9e5aeb940" />
 
 ## Description
 
