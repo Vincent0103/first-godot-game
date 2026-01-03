@@ -1,5 +1,9 @@
 # Knight's Pause
 
+<img width="1155" height="648" alt="image" src="https://github.com/user-attachments/assets/7dd88429-23d7-4c64-a2c5-7816577a6eac" />
+
+## Description
+
 This is my first fully functional game built with Godot. I made it by following the very popular Brackeys YouTube tutorial series for Godot. The project is a learning exercise — it recreates the mechanics demonstrated in the video and includes my own small tweaks and polish as I learned.
 
 ## What this repository contains
@@ -12,6 +16,7 @@ This is my first fully functional game built with Godot. I made it by following 
 
 1. Open Godot (if not working move the README.md file and game/ folder somewhere else as they are not part of the Godot files).
 2. Run the main scene from the Godot editor.
+
 
 ## Credits
 
