@@ -1,4 +1,4 @@
-# First Godot Game
+# Knight's Pause
 
 This is my first fully functional game built with Godot. I made it by following the very popular Brackeys YouTube tutorial series for Godot. The project is a learning exercise — it recreates the mechanics demonstrated in the video and includes my own small tweaks and polish as I learned.
 
