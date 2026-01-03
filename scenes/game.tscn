@@ -1,6 +1,8 @@
-[gd_scene load_steps=23 format=3 uid="uid://c5lj27wln3b5"]
+[gd_scene load_steps=26 format=3 uid="uid://c5lj27wln3b5"]
 
+[ext_resource type="Script" uid="uid://wk52qm53sbr0" path="res://scripts/game_manager.gd" id="1_kvpfn"]
 [ext_resource type="PackedScene" uid="uid://byrw0t0jiso8b" path="res://scenes/player.tscn" id="1_uwrxv"]
+[ext_resource type="FontFile" uid="uid://b8v3wyxt1oabr" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_dinhu"]
 [ext_resource type="Script" uid="uid://kfluwep1tvck" path="res://scripts/player.gd" id="2_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://gsul1wmr3u2c" path="res://assets/sprites/world_tileset.png" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://bnimakox8owjr" path="res://scenes/platform.tscn" id="4_lbhrr"]
@@ -9,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://ofjmns1dv5ht" path="res://scenes/winter-platform.tscn" id="7_gee14"]
 [ext_resource type="PackedScene" uid="uid://c7texji20vnpw" path="res://scenes/winter-platform-small.tscn" id="8_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://bw7f1fvtbsav8" path="res://scenes/slime.tscn" id="9_0tnpc"]
+[ext_resource type="FontFile" uid="uid://d3m25fngar85n" path="res://assets/fonts/PixelOperator8.ttf" id="10_vtaks"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lbhrr"]
 texture = ExtResource("3_lnu2h")
@@ -308,6 +311,24 @@ _data = {
 
 [node name="Game" type="Node2D"]
 
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_kvpfn")
+
+[node name="ScoreLabel" type="Label" parent="GameManager"]
+offset_left = 517.0
+offset_top = -146.0
+offset_right = 644.0
+offset_bottom = -127.0
+theme_override_colors/font_color = Color(0.09803922, 0.3137255, 0.7529412, 1)
+theme_override_fonts/font = ExtResource("2_dinhu")
+theme_override_font_sizes/font_size = 8
+text = "Collected X coins!
+Y left."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-1, 0)
 tile_set = SubResource("TileSet_iywne")
@@ -354,7 +375,10 @@ position = Vector2(-120, 9)
 position = Vector2(136, 73)
 
 [node name="Coin5" parent="Coins" instance=ExtResource("5_iywne")]
-position = Vector2(488, 89)
+position = Vector2(487, 89)
+
+[node name="Coin14" parent="Coins" instance=ExtResource("5_iywne")]
+position = Vector2(807, 73)
 
 [node name="Coin6" parent="Coins" instance=ExtResource("5_iywne")]
 position = Vector2(472, -72)
@@ -433,3 +457,26 @@ autoplay = "move"
 
 [node name="Slime" parent="." instance=ExtResource("9_0tnpc")]
 position = Vector2(407, 112)
+
+[node name="Labels" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = -84.0
+offset_top = -39.0
+offset_right = 89.0
+offset_bottom = -31.0
+theme_override_colors/font_color = Color(0.09803922, 0.3137255, 0.7529412, 1)
+theme_override_fonts/font = ExtResource("10_vtaks")
+theme_override_font_sizes/font_size = 8
+text = "Don't fall miserably please."
+
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = -120.0
+offset_top = -132.0
+offset_right = -99.0
+offset_bottom = -113.0
+theme_override_colors/font_color = Color(0.09803922, 0.3137255, 0.7529412, 1)
+theme_override_fonts/font = ExtResource("10_vtaks")
+theme_override_font_sizes/font_size = 8
+text = "huh
+"
